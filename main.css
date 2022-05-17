@@ -1,8 +1,27 @@
-body {
-    background-color: rgb(33, 33, 33);
+* {
+    margin: 0%;
 }
 
-.box {
-    background-color: rgb(163, 212, 255);
-    border-radius: 4px;
+html {
+    min-height: 100%;
+}
+
+body {
+    background-color: #EEEEEE;
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    background-color: #1C1D21;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+li {
+    color: #EEEEEE;
+    margin: 5px auto;
 }
