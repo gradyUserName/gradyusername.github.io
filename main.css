@@ -28,3 +28,8 @@ li {
     color: #EEEEEE;
     margin: 5px auto;
 }
+
+a {
+    text-decoration: none;
+    color: #EEEEEE;
+}
