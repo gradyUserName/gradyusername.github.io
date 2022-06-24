@@ -7,6 +7,10 @@
         <script src="https://kit.fontawesome.com/1415fbe1ec.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <script src="app.js" async defer></script>
@@ -17,17 +21,35 @@
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
+
             <!-- Nav menu items -->
             <nav class="nav">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#about-me" class="nav__link">About Me</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">My Stuff</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Other</a></li>
                 </ul>
             </nav>
-
         </header>
+
+        <!-- Introduction -->
+        <section class="into" id="home">
+            <i class="fa-solid fa-user-astronaut"></i>
+            <h1 class="section__title section__title--intro">
+                Hello! My name is <strong>Grady</strong>.
+            </h1>
+        </section>
+
+        <!-- About Me -->
+        <section class="about-me" id="about-me">
+            <h2 class="section__title section__title--services">
+                About me
+            </h2>
+            <p class="about-me__text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus blanditiis animi ducimus odit in doloribus itaque iusto natus perspiciatis eveniet vel voluptate quas dolorem inventore obcaecati, saepe repellat ex soluta.
+            </p>
+        </section>
 
     </body>
 </html>
