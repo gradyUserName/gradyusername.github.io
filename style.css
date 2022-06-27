@@ -48,6 +48,10 @@ img {
     max-width: 100%;
 }
 
+strong {
+    font-weight: var(--fw-bold);
+}
+
 /* Typography */
 
 h1,
@@ -67,4 +71,16 @@ h2 {
 
 h3 {
     font-size: var(--fs-h3);
+}
+
+/* Makes nav links horizontal */
+.nav__item {
+    display: inline-block;
+}
+
+/* Styles my name */
+
+.section__title--intro strong {
+    display: block;
+    margin-bottom: .4em;
 }
