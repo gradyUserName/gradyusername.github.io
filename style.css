@@ -23,7 +23,7 @@
     --fs-body: 1rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 850px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
@@ -46,6 +46,23 @@ body {
 img {
     display: block;
     max-width: 100%;
+}
+
+header {
+    border: 1px solid blue;
+    position: fixed;
+    display: flex;
+    min-width: 100%;
+}
+
+.nav-toggle {
+    min-width: var(--fs-h1);
+    min-height: var(--fs-h1);
+}
+
+.intro {
+    border: 1px solid red;
+    padding-top: 150px;
 }
 
 strong {
@@ -78,9 +95,3 @@ h3 {
     display: inline-block;
 }
 
-/* Styles my name */
-
-.section__title--intro strong {
-    display: block;
-    margin-bottom: .4em;
-}
