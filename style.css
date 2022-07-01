@@ -49,10 +49,22 @@ img {
 }
 
 header {
-    border: 1px solid blue;
     position: fixed;
     display: flex;
     min-width: 100%;
+}
+
+.nav {
+    min-width: 100%;
+    display: table;
+    margin: 0 auto;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .nav-toggle {
@@ -61,12 +73,15 @@ header {
 }
 
 .intro {
-    border: 1px solid red;
     padding-top: 150px;
 }
 
 strong {
     font-weight: var(--fw-bold);
+}
+
+.about-me {
+    padding-top: var(--fs-h1);
 }
 
 /* Typography */
@@ -93,5 +108,7 @@ h3 {
 /* Makes nav links horizontal */
 .nav__item {
     display: inline-block;
+    position: relative;
+    right: var(--fs-h2);
 }
 
