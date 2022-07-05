@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 /* Custom properties */
 
 :root {
@@ -21,6 +26,8 @@
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
+
+    --nav-width: 500px
 }
 
 @media (min-width: 850px) {
@@ -29,6 +36,8 @@
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.25rem;
+
+        --nav-width: 700px;
     }
 }
 
@@ -56,17 +65,19 @@ header {
 
 .nav {
     min-width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .nav__list {
     list-style: none;
-    padding: 0;
-    min-width: 100%;
+    min-width: var(--nav-width);
+    display: flex;
+    justify-content: space-between;
 }
 
-.nav-toggle {
-    min-width: var(--fs-h1);
-    min-height: var(--fs-h1);
+.nav__item {
+    display: inline-block;
 }
 
 .intro {
@@ -101,10 +112,3 @@ h2 {
 h3 {
     font-size: var(--fs-h3);
 }
-
-/* Makes nav links horizontal */
-.nav__item {
-    display: inline-block;
-    margin-left: var(--fs-h1);
-}
-
