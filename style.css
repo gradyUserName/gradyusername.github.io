@@ -9,6 +9,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Custom properties */
 
 :root {
@@ -81,15 +85,12 @@ header {
 }
 
 .intro {
-    padding-top: 150px;
-}
-
-strong {
-    font-weight: var(--fw-bold);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .about-me {
-    padding-top: var(--fs-h1);
+    padding-bottom: 5rem;
 }
 
 /* Typography */
@@ -111,4 +112,8 @@ h2 {
 
 h3 {
     font-size: var(--fs-h3);
+}
+
+strong {
+    font-weight: var(--fw-bold);
 }
