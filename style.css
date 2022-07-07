@@ -34,7 +34,7 @@ html {
     --nav-width: 500px
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1000px) {
     :root {
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
@@ -87,6 +87,20 @@ header {
 .intro {
     padding-top: 5rem;
     padding-bottom: 5rem;
+}
+
+.intro i,
+.intro h1 {
+    display: inline-block;
+}
+
+.intro i {
+    font-size: var(--fs-h1);
+    padding: 0px var(--fs-body);
+}
+
+.section__title {
+    padding-bottom: var(--fs-body);
 }
 
 .about-me {
